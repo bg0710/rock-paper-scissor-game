@@ -20,7 +20,7 @@ void whatchoice(int x, char c)
 }
 int randomnum(int n)
 {
-    srand(time(NULL));
+    
     return rand() % n;
 }
 char choice()
@@ -63,6 +63,7 @@ int whowon(char a, char b)
 
 int main()
 {
+    srand(time(NULL));
     printf("\nWelcome to Rock, Paper, Scissor Game!!\n");
     printf("\n#INSTRUCTIONS:\nIt will be a best of three game.\nChoose 'r' for Rock.\nChoose 'p' for Paper.\nChoose 's' for Scissor.\n");
 
